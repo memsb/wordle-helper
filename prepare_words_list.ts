@@ -1,7 +1,7 @@
-import * as fs from 'fs';
+import * as fs from "fs";
 
 const get_words = (): string[] => {
-    return fs.readFileSync('data/answers.txt', 'utf8').split("\n");
+    return fs.readFileSync('data/input.txt', 'utf8').split("\n");
 }
 
 const save_words = (words: string[]) => {
